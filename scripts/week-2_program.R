@@ -8,6 +8,7 @@ class(AirPassengers)
 View(AirPassengers)
 
 
+
 #Converting the dataset to Dataframe
 ap_df <- data.frame(
   year <- time(AirPassengers),
