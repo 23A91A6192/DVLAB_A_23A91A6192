@@ -62,7 +62,8 @@ ggplot(ap_df,
     y='No.of Passengers')+
   geom_point(color='red',size=0.5)+
   geom_smooth(se=FALSE,color='orange')+
-  theme_minimal()+
+  theme_dark()+
   theme(
     plot.title=element_text(face="bold",size=14),
     plot.subtitle=element_text(size=10))
+
