@@ -7,6 +7,7 @@ head(iris,3)
 str(iris)
 class(iris)
 
+
 #count of each species and to see data in column "species"
 iris$Species
 View(iris)
@@ -61,5 +62,3 @@ barplot(
 )
 
 
-## End of File
-## New
