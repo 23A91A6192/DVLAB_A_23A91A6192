@@ -54,6 +54,7 @@ ggplot(iris,
 
 #colored box plot by species
 ggplot(iris,aes(x = Species, y = Sepal.Length,fill = Species))+
+  geom_boxplot()+
   theme_minimal()
 
 #Using Manual Color palette
