@@ -62,3 +62,12 @@ ggplot(diamonds,aes(carat,price))+
   scale_fill_viridis_c()+
   facet_wrap(~cut)+
   theme_minimal()
+
+#LOG SCALE HEXBIN
+ggplot(diamonds,aes(carat,price))+
+  geom_hex()+
+  scale_fill_viridis_c()+
+  scale_y_log10()+
+  theme_minimal()
+
+
