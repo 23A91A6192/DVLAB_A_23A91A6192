@@ -63,3 +63,13 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) +
   geom_point(color = "steelblue") +
   facet_wrap(~Species) +
   theme_minimal()
+
+# Scatter Plot Matrix
+# Using GGally (extension of ggplot2)
+install.packages('GGally')
+library(GGally)
+ggpairs(
+  iris,
+  columns = 1:4,
+  aes(color = Species, alpha = 0.6)
+)
